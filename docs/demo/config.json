@@ -1,0 +1,60 @@
+{
+  "pies": [
+    {
+      "id": "1",
+      "pie": {
+        "name": "corespring-ordering-ng15",
+        "version": "1.0.0"
+      },
+      "feedback": {
+        "correctFeedbackType": "default",
+        "partialFeedbackType": "default",
+        "incorrectFeedbackType": "default"
+      },
+      "allowPartialScoring": true,
+      "partialScoring" : [
+        {}
+      ],
+      "model": {
+        "choices": [
+          {
+            "label": "one",
+            "labelType": "text",
+            "id": "id_1",
+            "moveOnDrag": true
+          },
+          {
+            "label": "two",
+            "labelType": "text",
+            "id": "id_2",
+            "moveOnDrag": true
+          },
+          {
+            "label": "three",
+            "labelType": "text",
+            "id": "id_3",
+            "moveOnDrag": true
+          },
+          {
+            "label": "four",
+            "labelType": "text",
+            "id": "id_4",
+            "moveOnDrag": true
+          }
+        ],
+        "config": {
+          "answerAreaLabel": "",
+          "choiceAreaLabel": "",
+          "choiceAreaLayout": "vertical",
+          "choiceAreaPosition": "above",
+          "placementType": "inPlace",
+          "removeAllAfterPlacing": true,
+          "showOrdering": false,
+          "shuffle": true
+        }
+      },
+      "weight": 1,
+      "minimumWidth": 570
+    }
+  ]
+}
