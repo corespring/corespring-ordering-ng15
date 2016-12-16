@@ -1,60 +1,62 @@
 {
-  "elements": {
-    "corespring-ordering-ng15": "../.."
-  },
-  "models": [
-    {
-      "id": "1",
-      "element": "corespring-ordering-ng15",
-      "feedback": {
-        "correctFeedbackType": "default",
-        "partialFeedbackType": "default",
-        "incorrectFeedbackType": "default"
-      },
-      "allowPartialScoring": true,
-      "partialScoring" : [
-        {}
+	"elements": {
+		"corespring-ordering-ng15": "../.."
+	},
+	"models": [
+		{
+			"id": "1",
+			"element": "corespring-ordering-ng15",
+			"correctResponse" : [ 
+        "ChoiceC", 
+        "ChoiceA", 
+        "ChoiceB", 
+        "ChoiceD"
       ],
-      "model": {
-        "choices": [
+      "model" : {
+        "config" : {
+          "shuffle" : true,
+          "choiceAreaLayout" : "vertical",
+          "placementType" : "inPlace"
+        },
+        "choices" : [ 
           {
-            "label": "one",
-            "labelType": "text",
-            "id": "id_1",
-            "moveOnDrag": true
-          },
+            "label" : "<img src=\"caterpillar.png\"/>",
+            "value" : "ChoiceA",
+            "content" : "<img src=\"caterpillar.png\"/>",
+            "id" : "ChoiceA",
+            "moveOnDrag" : true
+          }, 
           {
-            "label": "two",
-            "labelType": "text",
-            "id": "id_2",
-            "moveOnDrag": true
-          },
+            "label" : "<img src=\"cocoon2.png\"/>",
+            "value" : "ChoiceB",
+            "content" : "<img src=\"cocoon2.png\"/>",
+            "id" : "ChoiceB",
+            "moveOnDrag" : true
+          }, 
           {
-            "label": "three",
-            "labelType": "text",
-            "id": "id_3",
-            "moveOnDrag": true
-          },
+            "label" : "<img src=\"egg2.png\"/>",
+            "value" : "ChoiceC",
+            "content" : "<img src=\"egg2.png\"/>",
+            "id" : "ChoiceC",
+            "moveOnDrag" : true
+          }, 
           {
-            "label": "four",
-            "labelType": "text",
-            "id": "id_4",
-            "moveOnDrag": true
+            "label" : "<img src=\"butterfly2.png\"/>",
+            "value" : "ChoiceD",
+            "content" : "<img src=\"butterfly2.png\"\"/>",
+            "id" : "ChoiceD",
+            "moveOnDrag" : true
           }
         ],
-        "config": {
-          "answerAreaLabel": "",
-          "choiceAreaLabel": "",
-          "choiceAreaLayout": "vertical",
-          "choiceAreaPosition": "above",
-          "placementType": "inPlace",
-          "removeAllAfterPlacing": true,
-          "showOrdering": false,
-          "shuffle": true
-        }
+        "correctResponse" : [ 
+            "ChoiceC", 
+            "ChoiceA", 
+            "ChoiceB", 
+            "ChoiceD"
+        ],
+        "feedback" : []
       },
-      "weight": 1,
-      "minimumWidth": 570
-    }
-  ]
+			"minimumWidth": 570
+		}
+	]
 }
